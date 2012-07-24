@@ -45,4 +45,13 @@ $THEME->sheets = array(
     'question',
     'css3'      /** Sets up CSS 3 + browser specific styles **/
 );
+
 $THEME->enable_dock = true;
+
+$THEME->layouts = array(
+	'frontpage' => array(
+		'file' => 'frontpage.php',
+		'regions' => array('side-pre', 'side-post'),
+        'defaultregion' => 'side-pre',
+	),
+);
