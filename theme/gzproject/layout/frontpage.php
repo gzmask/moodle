@@ -35,6 +35,11 @@
       </td>
     </tr>
   </table>
-  <?php echo $OUTPUT->standard_end_of_body_html() ?>
+<?php 
+  if (isset($USER->username)) {
+    echo $OUTPUT->standard_end_of_body_html();
+  }
+
+?>
 </body>
 </html>
